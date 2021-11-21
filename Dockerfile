@@ -1,6 +1,6 @@
-FROM tiangolo/uwsgi-nginx:python3.7
+FROM tiangolo/uwsgi-nginx:python3.8
 
-COPY ./app.py /app/main.py
+COPY ./app.py /app/app.py
 COPY ./deploy/uwsgi/prod.ini /app/uwsgi.ini
 
 WORKDIR /app
